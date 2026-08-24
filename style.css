@@ -40,7 +40,7 @@ body {
             #8FC5E2 25%,
             #B9D9EB 55%,
             #DCEBF4 78%,
-            #EAF4F9 100%
+            #e6f2f8 100%
         );
 
     background-attachment: fixed;
@@ -67,9 +67,9 @@ body::before {
     background:
         linear-gradient(
             to bottom,
-            #F8FCFF 0%,
-            #EDF7FC 55%,
-            #DCECF8 100%
+            #ebf3f9 0%,
+            #e4f1f8 55%,
+            #e2eef7 100%
         );
 
     /*
@@ -107,7 +107,7 @@ body::after {
             #FFFFFF 0%,
             #F8FBFE 45%,
             #EAF4FC 75%,
-            #D7EAF8 100%
+            #ddedf9 100%
         );
 
     border-radius:
@@ -761,74 +761,74 @@ body::after {
 
 .home-snowflakes span:nth-child(1) {
     left: 7%;
-    bottom: 18px;
-    font-size: 15px;
+    bottom: 0px;
+    font-size: 19px;
 }
 
 .home-snowflakes span:nth-child(2) {
     left: 16%;
-    bottom: 55px;
-    font-size: 23px;
+    bottom: 35px;
+    font-size: 25px;
 }
 
 .home-snowflakes span:nth-child(3) {
     left: 27%;
-    bottom: 25px;
-    font-size: 13px;
+    bottom: 20px;
+    font-size: 19px;
 }
 
 .home-snowflakes span:nth-child(4) {
     left: 38%;
-    bottom: 72px;
-    font-size: 19px;
+    bottom: 42px;
+    font-size: 29px;
 }
 
 .home-snowflakes span:nth-child(5) {
     left: 48%;
-    bottom: 35px;
-    font-size: 26px;
+    bottom: 25px;
+    font-size: 30px;
 }
 
 .home-snowflakes span:nth-child(6) {
     left: 58%;
-    bottom: 82px;
-    font-size: 14px;
+    bottom: 42px;
+    font-size: 24px;
 }
 
 .home-snowflakes span:nth-child(7) {
     left: 67%;
-    bottom: 20px;
+    bottom: 10px;
     font-size: 21px;
 }
 
 .home-snowflakes span:nth-child(8) {
     left: 76%;
-    bottom: 60px;
+    bottom: 30px;
     font-size: 16px;
 }
 
 .home-snowflakes span:nth-child(9) {
     left: 84%;
-    bottom: 30px;
+    bottom: 23px;
     font-size: 24px;
 }
 
 .home-snowflakes span:nth-child(10) {
     left: 91%;
-    bottom: 75px;
-    font-size: 13px;
+    bottom: 21px;
+    font-size: 31px;
 }
 
 .home-snowflakes span:nth-child(11) {
     left: 32%;
-    bottom: 12px;
+    bottom: 8px;
     font-size: 18px;
 }
 
 .home-snowflakes span:nth-child(12) {
     left: 72%;
-    bottom: 95px;
-    font-size: 12px;
+    bottom: 5px;
+    font-size: 17px;
 }
 /* =========================
    RESPONSIVE - TABLET
