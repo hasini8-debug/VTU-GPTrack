@@ -354,7 +354,7 @@ body {
 .calculator-title h2 {
     margin: 0 auto 35px;
 
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 700;
 
     color: #082F49;
@@ -789,9 +789,9 @@ body {
     margin: 10px auto;
 }
 
-.popup-sgpa h2 {
-    font-size: 28px;
 
+    .popup-sgpa h2 {
+    font-size: 26px; /* was 28px */
     margin: 5px 0;
 }
 
@@ -944,5 +944,179 @@ input[type="number"]::-webkit-outer-spin-button {
 @media (max-width: 719px) {
     .subject-peachu {
         left: -71px;
+    }
+}
+.hero-section h1 {
+    font-size: 58px; /* was 68px */
+}
+
+.calculator-link p {
+    font-size: 20px; /* was 24px */
+}
+
+.info-card h2,
+.manual-section h2,
+.grade-section h2 {
+    font-size: 30px; /* was 36px */
+}
+
+.formula-box {
+    font-size: 22px; /* was 26px */
+}
+
+.step-card h3 {
+    font-size: 24px; /* was 23px */
+}
+
+.note-card h1 {
+    font-size: 24px; /* was 26px */
+}
+
+.calculator-title h2 {
+    font-size: 40px; /* was 48px */
+}
+
+#calculateBtn {
+    font-size: 16px; /* was 19px */
+}
+
+#viewResultBtn {
+    font-size: 16px; /* was 19px */
+}
+
+/* =========================
+   RESPONSIVE - TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    .hero-section {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 42px;
+    }
+
+    .info-card,
+    .manual-section,
+    .note-card,
+    .grade-section {
+        width: 94%;
+        padding: 28px 20px;
+    }
+
+    .steps-container,
+    .note-card {
+        width: 90%;
+    }
+
+    #calculator-section {
+        width: 100%;
+        padding: 25px 15px;
+    }
+
+    .calculator-title h2 {
+        font-size: 30px;
+    }
+
+    .scheme-section {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #schemeSelect {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .subject-count-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #subjectCount {
+        width: 90%;
+        max-width: 240px;
+    }
+
+    /* Make wide tables scrollable instead of squishing */
+    #subjectTable,
+    #resultTable,
+    .grade-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .result-card {
+        width: 90%;
+    }
+
+    .popup-card {
+        width: 94%;
+        padding: 28px 20px;
+    }
+
+    .hero-peachu,
+    .subject-peachu {
+        display: none;
+    }
+}
+
+/* =========================
+   RESPONSIVE - PHONE
+========================= */
+
+@media (max-width: 500px) {
+
+    .hero-section h1 {
+        font-size: 32px;
+    }
+
+    .back-button {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+    }
+
+    .info-card h2,
+    .manual-section h2,
+    .grade-section h2 {
+        font-size: 24px;
+    }
+
+    .info-card p,
+    .step-card p,
+    .note-card p {
+        font-size: 16px;
+    }
+
+    .formula-box {
+        font-size: 17px;
+        padding: 10px 16px;
+    }
+
+    .step-card h3 {
+        font-size: 19px;
+    }
+
+    #sgpa {
+        font-size: 44px;
+    }
+
+    #popupSGPA {
+        font-size: 36px;
+        padding: 10px 28px;
+    }
+
+    .calculator-link span {
+        font-size: 26px;
+    }
+
+    .calculator-link p {
+        font-size: 16px;
     }
 }
