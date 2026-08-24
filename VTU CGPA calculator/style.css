@@ -1,0 +1,1052 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #c0e0f2;
+    color: #082F49;
+}
+
+.page-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 35px 0 80px;
+    text-align: center;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero-section {
+    position: relative;
+    width: 94%;
+    max-width: 1350px;
+    margin: 35px auto 55px;
+    padding: 42px 45px;
+    border-radius: 28px;
+
+    background: rgba(255, 255, 255, 0.68);
+    border: 1px solid rgba(255, 255, 255, 0.95);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 12px 32px rgba(12, 55, 86, 0.13),
+        0 0 22px rgba(53, 139, 186, 0.10);
+
+    text-align: center;
+}
+
+.back-button {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+
+    width: 46px;
+    height: 46px;
+
+    border: 1px solid rgba(53, 139, 186, 0.20);
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.88);
+    color: #0C3756;
+
+    font-size: 26px;
+    cursor: pointer;
+
+    box-shadow: 0 5px 14px rgba(12, 55, 86, 0.12);
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+}
+
+.hero-section h1 {
+    margin: 8px 0;
+
+    font-family: "Times New Roman", serif;
+    font-size: 60px;
+    font-weight: bold;
+
+    color: #082F49;
+}
+
+/* =====================================================
+   INFORMATION CARDS
+===================================================== */
+
+.info-card,
+.manual-section,
+.note-card {
+    width: 88%;
+    max-width: 1150px;
+    margin: 50px auto;
+    padding: 40px;
+
+    border-radius: 26px;
+
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.92);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 10px 28px rgba(12, 55, 86, 0.11),
+        0 0 20px rgba(53, 139, 186, 0.07);
+
+    text-align: center;
+}
+
+.info-card h2,
+.manual-section h2 {
+    margin: 0 0 24px;
+
+    font-size: 33px;
+    font-weight: 700;
+
+    color: #0C3756;
+}
+
+.info-card p,
+.note-card p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #123F59;
+}
+
+/* =====================================================
+   FORMULA
+===================================================== */
+
+.formula-box {
+    display: inline-block;
+
+    margin-top: 18px;
+    padding: 14px 30px;
+
+    border-radius: 15px;
+
+    background: rgba(241, 249, 253, 0.90);
+    border: 1px solid rgba(53, 139, 186, 0.20);
+
+    box-shadow: 0 6px 16px rgba(12, 55, 86, 0.08);
+
+    font-size: 24px;
+    font-weight: 600;
+
+    color: #0C3756;
+}
+
+/* =====================================================
+   STEPS
+===================================================== */
+
+.steps-container {
+    width: 72%;
+    max-width: 800px;
+
+    margin: 28px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.step-card {
+    padding: 10px 10px;
+
+    border-radius: 18px;
+
+    background: rgba(247, 252, 254, 0.88);
+    border: 1px solid rgba(53, 139, 186, 0.16);
+
+    box-shadow: 0 5px 15px rgba(12, 55, 86, 0.08);
+}
+
+.step-card:hover {
+    transform: translateY(-3px);
+}
+
+.step-card h3 {
+    margin: 7px 0 8px;
+
+    font-size: 21px;
+    color: #0C3756;
+}
+
+.step-card p {
+    margin: 0 0 7px;
+
+    font-size: 17px;
+    line-height: 1.6;
+
+    color: #123F59;
+}
+
+/* =====================================================
+   CGPA CALCULATOR
+===================================================== */
+
+#calculator-section {
+    width: 94%;
+    max-width: 1350px;
+
+    margin: 70px auto 0;
+    padding: 20px 45px 45px;
+
+    text-align: center;
+}
+
+.calculator-title h2 {
+    margin: 0 auto 32px;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    color: #082F49;
+}
+
+/* =====================================================
+   SEMESTER CONTAINER
+===================================================== */
+
+#semesterContainer {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+/* =====================================================
+   SEMESTER CARD
+===================================================== */
+
+.semester-card {
+    position: relative;
+
+    width: 100%;
+
+    padding: 28px 40px 32px;
+
+    margin-bottom: 22px;
+
+    background: rgba(255, 255, 255, 0.72);
+
+    border: 1px solid rgba(255, 255, 255, 0.92);
+    border-radius: 22px;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 10px 28px rgba(12, 55, 86, 0.11),
+        0 0 20px rgba(53, 139, 186, 0.07);
+
+    animation: fadeIn 0.5s ease;
+}
+
+/* =====================================================
+   SEMESTER HEADER
+===================================================== */
+
+.semester-card-header {
+    position: relative;
+
+    width: 85%;
+
+    margin-left: 5%;
+}
+
+.semester-title {
+    margin: 0 0 25px;
+
+    font-family: "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: bold;
+
+    color: #082F49;
+
+    text-align: left;
+}
+
+/* =====================================================
+   REMOVE SEMESTER BUTTON
+===================================================== */
+
+.remove-semester {
+    position: absolute;
+
+    top: 4px;
+    right: -55px;
+
+    width: 42px;
+    height: 42px;
+
+    padding: 0;
+
+    border: 1px solid rgba(176, 0, 32, 0.25);
+    border-radius: 10px;
+
+    background: #FFF0F1;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.25s ease;
+}
+
+.remove-semester img {
+    width: 28px;
+    height: 28px;
+
+    object-fit: contain;
+}
+
+.remove-semester:hover {
+    background: #FFE0E3;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(176, 0, 32, 0.20);
+}
+
+/* =====================================================
+   SEMESTER INPUT ROWS
+===================================================== */
+
+.semester-input-row {
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 25px;
+
+    margin: 16px 0 16px 5%;
+
+    width: 80%;
+}
+
+.semester-input-row label {
+    width: 100px;
+
+    text-align: right;
+
+    font-size: 19px;
+    font-weight: 600;
+
+    color: #0C3756;
+}
+
+.semester-input-row input {
+    width: 300px;
+
+    padding: 13px 16px;
+
+    border-radius: 11px;
+
+    border: 1px solid #A9C8D8;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    font-size: 17px;
+
+    text-align: center;
+
+    color: #0C3756;
+
+    outline: none;
+
+    box-shadow:
+        0 4px 12px rgba(12, 55, 86, 0.08),
+        0 0 9px rgba(53, 139, 186, 0.05);
+
+    transition: 0.25s ease;
+}
+
+.semester-input-row input::placeholder {
+    color: #9AAEB8;
+}
+
+.semester-input-row input:focus {
+    border-color: #358BBA;
+
+    box-shadow:
+        0 0 0 3px rgba(53, 139, 186, 0.15),
+        0 0 14px rgba(53, 139, 186, 0.08);
+}
+
+/* =====================================================
+   REMOVE NUMBER INPUT ARROWS
+===================================================== */
+
+input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* =====================================================
+   ADD SEMESTER
+===================================================== */
+
+.add-semester-btn {
+    display: block;
+
+    width: 300px;
+
+    margin: 22px auto 14px;
+
+    padding: 12px 20px;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(53, 139, 186, 0.22);
+
+    background: rgba(255, 255, 255, 0.42);
+
+    color: #04354A;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 14px rgba(12, 55, 86, 0.07);
+
+    transition: 0.25s ease;
+}
+
+.add-semester-btn span {
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-right: 6px;
+}
+
+.add-semester-btn:hover {
+    transform: translateY(-2px);
+
+    background: rgba(255, 255, 255, 0.72);
+
+    border-color: rgba(53, 139, 186, 0.35);
+
+    box-shadow:
+        0 8px 18px rgba(12, 55, 86, 0.11);
+}
+
+/* =====================================================
+   ERROR MESSAGE
+===================================================== */
+
+.error-message {
+    width: 80%;
+    max-width: 600px;
+
+    margin: 12px auto;
+
+    padding: 10px 15px;
+
+    border-radius: 10px;
+
+    color: #B00020;
+
+    font-size: 16px;
+}
+
+/* =====================================================
+   CALCULATE BUTTON
+===================================================== */
+
+#calculateBtn {
+    display: block;
+
+    margin: 18px auto 0;
+
+    padding: 13px 36px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #04354A;
+
+    color: #FFFFFF;
+
+    font-size: 19px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 15px rgba(4, 53, 74, 0.20),
+        0 0 12px rgba(4, 53, 74, 0.08);
+
+    transition: 0.25s ease;
+}
+
+#calculateBtn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 20px rgba(4, 53, 74, 0.25),
+        0 0 16px rgba(4, 53, 74, 0.10);
+}
+
+/* =====================================================
+   RESULT CARD
+===================================================== */
+
+.result-card {
+    width: 410px;
+
+    margin: 45px auto;
+
+    padding: 32px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    border-radius: 22px;
+
+    border: 1px solid rgba(255, 255, 255, 0.95);
+
+    color: #0C3756;
+
+    box-shadow:
+        0 10px 28px rgba(12, 55, 86, 0.13),
+        0 0 20px rgba(53, 139, 186, 0.08);
+
+    animation: fadeIn 0.6s ease;
+}
+
+.result-card h2 {
+    margin: 0 0 8px;
+
+    font-size: 27px;
+
+    color: #082F49;
+}
+
+#cgpa {
+    margin: 8px 0;
+
+    font-size: 60px;
+    font-weight: bold;
+
+    color: #26637F;
+}
+
+.result-details {
+    margin-top: 17px;
+
+    font-size: 19px;
+}
+
+.result-details p {
+    margin: 9px;
+}
+
+#messageBox {
+    margin-top: 18px;
+
+    font-size: 17px;
+
+    color: #156447;
+}
+
+/* =====================================================
+   VIEW RESULT CARD
+===================================================== */
+
+#viewResultBtn {
+    display: block;
+
+    margin: 22px auto 0;
+
+    padding: 13px 32px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #04354A;
+
+    color: #FFFFFF;
+
+    font-size: 19px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+
+    box-shadow:
+        0 6px 15px rgba(4, 53, 74, 0.20);
+}
+
+#viewResultBtn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 20px rgba(4, 53, 74, 0.25);
+}
+
+/* =====================================================
+   POPUP
+===================================================== */
+
+.popup {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 30, 45, 0.58);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.popup-card {
+    position: relative;
+
+    width: 500px;
+    max-width: 90%;
+
+    background: #FFFFFF;
+
+    padding: 45px 38px 38px;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(255, 255, 255, 0.95);
+
+    text-align: center;
+
+    color: #0C3756;
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.23);
+
+    animation: zoomIn 0.25s ease;
+}
+
+#closePopup {
+    position: absolute;
+
+    top: 18px;
+    left: 18px;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: #26637F;
+
+    color: #FFFFFF;
+
+    font-size: 27px;
+
+    cursor: pointer;
+}
+
+#closePopup:hover {
+    background: #04354A;
+}
+
+.popup-card h1 {
+    margin: 0 0 25px;
+
+    font-size: 30px;
+
+    color: #082F49;
+}
+
+#popupCGPA {
+    display: inline-block;
+
+    margin: 0;
+
+    padding: 13px 48px;
+
+    border-radius: 18px;
+
+    background: #26637F;
+
+    color: #FFFFFF;
+
+    font-size: 60px;
+    font-weight: bold;
+
+    box-shadow:
+        0 8px 18px rgba(12, 55, 86, 0.18);
+}
+
+.popup-semesters {
+    margin: 18px 0;
+
+    font-size: 19px;
+
+    color: #123F59;
+}
+
+.popup-semesters p {
+    margin: 0;
+}
+
+.popup-semesters span {
+    font-weight: 700;
+
+    color: #0C3756;
+}
+
+.popup-message {
+    margin-top: 20px;
+
+    font-size: 17px;
+
+    color: #B00020;
+
+    line-height: 1.5;
+}
+
+/* =====================================================
+   HIDDEN
+===================================================== */
+
+.hidden {
+    display: none !important;
+}
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.96);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .hero-section {
+        width: 100%;
+        padding: 40px 25px;
+    }
+
+    .hero-section h1 {
+        font-size: 50px;
+    }
+
+    .info-card,
+    .manual-section {
+        width: 94%;
+        padding: 30px 22px;
+    }
+
+    .steps-container {
+        width: 90%;
+    }
+
+    #calculator-section {
+        width: 100%;
+        padding: 25px 10px;
+    }
+
+    .calculator-title h2 {
+        font-size: 38px;
+    }
+
+    .semester-card {
+        width: 100%;
+    }
+
+    .semester-card-header {
+        width: 85%;
+    }
+
+    .remove-semester {
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    width: 42px;
+    height: 42px;
+
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+
+    background: #FFF0F1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+    .semester-input-row {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .page-container {
+        width: 94%;
+    }
+
+    .hero-section h1 {
+        font-size: 40px;
+    }
+
+    .back-button {
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
+
+    .info-card h2,
+    .manual-section h2 {
+        font-size: 29px;
+    }
+
+    .info-card p,
+    .step-card p {
+        font-size: 17px;
+    }
+
+    .formula-box {
+        font-size: 19px;
+        padding: 12px 18px;
+    }
+
+    .step-card h3 {
+        font-size: 20px;
+    }
+
+    .semester-card {
+        width: 96%;
+        padding: 24px 18px;
+    }
+
+    .semester-card-header {
+        width: 90%;
+        margin-left: 2%;
+    }
+
+    .semester-title {
+        font-size: 24px;
+    }
+
+    .remove-semester {
+        right: -45px;
+    }
+
+    .semester-input-row {
+        width: 100%;
+        margin-left: 0;
+        gap: 15px;
+    }
+
+    .semester-input-row label {
+        width: 80px;
+        font-size: 17px;
+    }
+
+    .semester-input-row input {
+        width: 220px;
+    }
+
+    .add-semester-btn {
+        width: 260px;
+    }
+
+    .result-card {
+        width: 90%;
+    }
+
+    #cgpa {
+        font-size: 52px;
+    }
+
+    #popupCGPA {
+        font-size: 48px;
+    }
+}
+/* =====================================================
+   FINAL SEMESTER TRASH BUTTON FIX
+   ===================================================== */
+
+.semester-card-header {
+    position: relative !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding-right: 60px !important;
+}
+
+/* Trash button */
+.semester-card-header .remove-semester {
+    position: absolute !important;
+
+    top: 8px !important;
+    right: 0 !important;
+
+    width: 42px !important;
+    height: 42px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    border: none !important;
+    border-radius: 10px !important;
+
+    background: #FFF0F1 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    cursor: pointer !important;
+
+    z-index: 999 !important;
+}
+
+/* Trash image */
+.semester-card-header .remove-semester img {
+    display: block !important;
+
+    width: 28px !important;
+    height: 28px !important;
+
+    object-fit: contain !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Hover */
+.semester-card-header .remove-semester:hover {
+    background: #FFE1E4 !important;
+
+    transform: translateY(-2px) !important;
+
+    box-shadow:
+        0 5px 12px rgba(176, 0, 32, 0.20) !important;
+}
+
+/* Static Snowflakes */
+
+.snow-container {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.snowflake {
+    position: absolute;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    user-select: none;
+    opacity: 0.95;
+}
+/* =====================================================
+   PEACHU - HERO CARD
+===================================================== */
+
+.hero-section {
+    position: relative;
+}
+
+.hero-peachu {
+    position: absolute;
+
+    top: 05px;
+    left: -91px;
+
+    width: 100px;
+    height: auto;
+
+    z-index: 10;
+
+    pointer-events: none;
+
+    filter: drop-shadow(0 6px 8px rgba(12, 55, 86, 0.12));
+}
+
+/* =====================================================
+   PEACHU - SEMESTER 1
+===================================================== */
+
+.semester-card {
+    position: relative;
+}
+
+.semester-peachu {
+    position: absolute;
+
+    top: 0px;
+    left: -73px;
+
+    width: 80px;
+    height: auto;
+
+    z-index: 10;
+
+    pointer-events: none;
+
+    filter: drop-shadow(0 6px 8px rgba(12, 55, 86, 0.12));
+}
