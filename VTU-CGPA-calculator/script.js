@@ -400,7 +400,7 @@ calculateCGPA
 );
 
 document.querySelector(".back-button").addEventListener("click", function () {
-    window.location.href = "VTU-GPTrack/index.html";
+    window.location.href = "../index.html";
 });
 
 // Static Snowflakes
