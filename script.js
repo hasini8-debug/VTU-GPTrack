@@ -37,6 +37,38 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+const contactForm = document.getElementById("contactForm");
+const formMessage = document.getElementById("form-message");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(contactForm);
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    "Accept": "application/json"
+                }
+            });
+
+            if (response.ok) {
+                formMessage.textContent = "Thank you for your feedback! ";
+                contactForm.reset();
+            } else {
+                formMessage.textContent =
+                    "Something went wrong. Please try again.";
+            }
+
+        } catch (error) {
+            formMessage.textContent =
+                "Something went wrong. Please try again.";
+        }
+    });
+}
 //remove access
 document.addEventListener("contextmenu", function (e) {
     e.preventDefault();

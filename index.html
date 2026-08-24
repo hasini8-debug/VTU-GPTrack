@@ -126,7 +126,7 @@
 
     <div class="contact-card">
 
-        <form id="contactForm">
+        <form id="contactForm" action="https://formspree.io/f/myegqgag" method="POST">
 
             <!-- Name + Email -->
 
@@ -137,11 +137,12 @@
                     <label for="name">Name :</label>
 
                     <input
-                        type="text"
-                        id="name"
-                        placeholder="Your name"
-                        required
-                    >
+    type="text"
+    id="name"
+    name="name"
+    placeholder="Your name"
+    required
+>
 
                 </div>
 
@@ -150,12 +151,13 @@
 
                     <label for="email">Email :</label>
 
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Your email"
-                        required
-                    >
+                   <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Your email"
+    required
+>
 
                 </div>
 
@@ -168,12 +170,12 @@
 
                 <label for="feedback">Feedback :</label>
 
-                <textarea
-                    id="feedback"
-                    placeholder="Write your feedback..."
-                    required
-                ></textarea>
-
+               <textarea
+    id="feedback"
+    name="feedback"
+    placeholder="Write your feedback..."
+    required
+></textarea>
             </div>
 
 
@@ -182,6 +184,7 @@
             </button>
 
         </form>
+        <p id="form-message" class="form-message"></p>
 
     </div>
 
