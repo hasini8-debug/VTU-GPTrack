@@ -345,7 +345,7 @@ if (calculatorLink && calculatorSection) {
 }
 });
 document.querySelector(".back-button").addEventListener("click", function () {
-    window.location.href = "../Home/index.html";
+    window.location.href = "VTU-GPTrack/index.html";
 });
 // =========================
 // STATIC SNOWFLAKES
