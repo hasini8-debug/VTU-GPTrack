@@ -1,0 +1,948 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #c0e0f2;
+    color: #082F49;
+}
+
+/* =========================
+   PAGE
+========================= */
+
+.page-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 35px 0 80px;
+    text-align: center;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero-section {
+    position: relative;
+    width: 94%;
+    max-width: 1350px;
+    margin: 35px auto 55px;
+    padding: 55px 45px;
+
+    border-radius: 28px;
+
+    background: rgba(255, 255, 255, 0.68);
+    border: 1px solid rgba(255, 255, 255, 0.95);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 12px 32px rgba(12, 55, 86, 0.13),
+        0 0 22px rgba(53, 139, 186, 0.10);
+
+    text-align: center;
+}
+
+.back-button {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+
+    width: 46px;
+    height: 46px;
+
+    border: 1px solid rgba(53, 139, 186, 0.20);
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.88);
+    color: #0C3756;
+
+    font-size: 26px;
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 14px rgba(12, 55, 86, 0.12),
+        0 0 12px rgba(53, 139, 186, 0.08);
+
+    transition: 0.25s ease;
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(12, 55, 86, 0.16),
+        0 0 16px rgba(53, 139, 186, 0.13);
+}
+
+.hero-section h1 {
+    width: 100%;
+    margin: 15px 0 28px;
+
+    font-family: "Times New Roman", serif;
+    font-size: 68px;
+    font-weight: bold;
+
+    color: #082F49;
+    letter-spacing: -1px;
+}
+
+.calculator-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    cursor: pointer;
+
+    color: #156447;
+
+    transition: 0.25s ease;
+}
+
+.calculator-link:hover {
+    transform: translateY(-2px);
+}
+
+.calculator-link span {
+    font-size: 32px;
+    font-weight: bold;
+    color: #156447;
+}
+
+.calculator-link p {
+    margin: 0;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    color: #156447;
+    text-decoration: underline;
+}
+
+/* =========================
+   INFORMATION SECTIONS
+========================= */
+
+.info-card,
+.manual-section,
+.note-card,
+.grade-section {
+    width: 88%;
+    max-width: 1150px;
+
+    margin: 50px auto;
+    padding: 40px;
+
+    border-radius: 26px;
+
+    background: rgba(255, 255, 255, 0.72);
+
+    border: 1px solid rgba(255, 255, 255, 0.92);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 10px 28px rgba(12, 55, 86, 0.11),
+        0 0 20px rgba(53, 139, 186, 0.07);
+
+    text-align: center;
+}
+
+.info-card h2,
+.manual-section h2,
+.grade-section h2 {
+    margin: 0 0 24px;
+
+    font-size: 36px;
+    font-weight: 700;
+
+    color: #0C3756;
+}
+
+.info-card p,
+.step-card p,
+.note-card p {
+    font-size: 19px;
+    line-height: 1.6;
+
+    color: #123F59;
+}
+
+/* =========================
+   FORMULA
+========================= */
+
+.formula-box {
+    display: inline-block;
+
+    margin-top: 18px;
+    padding: 14px 30px;
+
+    border-radius: 15px;
+
+    background: rgba(241, 249, 253, 0.90);
+    border: 1px solid rgba(53, 139, 186, 0.20);
+
+    box-shadow:
+        0 6px 16px rgba(12, 55, 86, 0.08),
+        0 0 12px rgba(53, 139, 186, 0.06);
+
+    font-size: 26px;
+    font-weight: 600;
+
+    color: #0C3756;
+}
+
+/* =========================
+   MANUAL STEPS
+========================= */
+
+.steps-container {
+    width: 72%;
+    max-width: 800px;
+
+    margin: 28px auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.step-card {
+    padding: 16px 28px;
+
+    border-radius: 18px;
+
+    background: rgba(247, 252, 254, 0.88);
+
+    border: 1px solid rgba(53, 139, 186, 0.16);
+
+    box-shadow:
+        0 5px 15px rgba(12, 55, 86, 0.08),
+        0 0 12px rgba(53, 139, 186, 0.05);
+
+    transition: 0.25s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(53, 139, 186, 0.28);
+
+    box-shadow:
+        0 9px 22px rgba(12, 55, 86, 0.12),
+        0 0 17px rgba(53, 139, 186, 0.09);
+}
+
+.step-card h3 {
+    margin: 7px 0 8px;
+
+    font-size: 23px;
+    color: #0C3756;
+}
+
+.step-card p {
+    margin: 0 0 7px;
+}
+
+/* =========================
+   NOTE
+========================= */
+
+.note-card {
+    width: 72%;
+    max-width: 900px;
+
+    padding: 24px 32px;
+
+    background: rgba(244, 250, 253, 0.90);
+
+    border-left: 4px solid #358BBA;
+}
+
+.note-card h1 {
+    margin: 0 0 15px;
+
+    font-size: 26px;
+    color: #0C3756;
+}
+
+.note-card p {
+    margin: 7px 0;
+    font-size: 18px;
+}
+
+/* =========================
+   GRADE TABLE
+========================= */
+
+.grade-table {
+    width: 75%;
+    max-width: 850px;
+
+    margin: 30px auto;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #D6E8F0;
+
+    box-shadow:
+        0 8px 22px rgba(12, 55, 86, 0.10),
+        0 0 15px rgba(53, 139, 186, 0.05);
+}
+
+.grade-table th,
+.grade-table td {
+    padding: 15px 22px;
+
+    text-align: center;
+
+    color: #123F59;
+
+    font-size: 18px;
+}
+
+.grade-table th {
+    background: #26637F;
+    color: #FFFFFF;
+
+    font-weight: 600;
+}
+
+.grade-table td {
+    border-bottom: 1px solid #E0EDF3;
+}
+
+.grade-table tr:last-child td {
+    border-bottom: none;
+}
+
+.grade-table tr:hover td {
+    background: #F0F7FA;
+}
+
+/* =========================
+   CALCULATOR
+========================= */
+
+#calculator-section {
+    width: 94%;
+    max-width: 1350px;
+
+    margin: 70px auto 0;
+    padding: 45px;
+
+    text-align: center;
+}
+
+.calculator-title h2 {
+    margin: 0 auto 35px;
+
+    font-size: 48px;
+    font-weight: 700;
+
+    color: #082F49;
+}
+
+/* =========================
+   SCHEME
+========================= */
+
+.scheme-section {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 22px;
+
+    margin: 30px auto;
+}
+
+.scheme-section h2 {
+    margin: 0;
+
+    font-size: 27px;
+
+    color: #0C3756;
+}
+
+#schemeSelect {
+    width: 300px;
+
+    padding: 13px 18px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    border: 1px solid #A9C8D8;
+    border-radius: 12px;
+
+    font-size: 17px;
+
+    color: #0C3756;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 14px rgba(12, 55, 86, 0.09),
+        0 0 10px rgba(53, 139, 186, 0.05);
+
+    transition: 0.25s ease;
+}
+
+#schemeSelect:hover {
+    border-color: #358BBA;
+
+    box-shadow:
+        0 6px 16px rgba(12, 55, 86, 0.10),
+        0 0 13px rgba(53, 139, 186, 0.09);
+}
+
+#schemeSelect:focus {
+    outline: none;
+
+    border-color: #358BBA;
+
+    box-shadow:
+        0 0 0 3px rgba(53, 139, 186, 0.15),
+        0 0 14px rgba(53, 139, 186, 0.08);
+}
+
+/* =========================
+   SUBJECT INPUT
+========================= */
+
+.subject-count-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    font-size: 20px;
+
+    color: #0C3756;
+}
+
+#subjectCount {
+    width: 240px;
+
+    padding: 13px;
+
+    border-radius: 12px;
+
+    border: 1px solid #A9C8D8;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    font-size: 17px;
+
+    text-align: center;
+
+    color: #0C3756;
+
+    box-shadow:
+        0 4px 12px rgba(12, 55, 86, 0.08),
+        0 0 9px rgba(53, 139, 186, 0.05);
+}
+
+#subjectCount:focus {
+    outline: none;
+
+    border-color: #358BBA;
+
+    box-shadow:
+        0 0 0 3px rgba(53, 139, 186, 0.15),
+        0 0 14px rgba(53, 139, 186, 0.08);
+}
+
+/* =========================
+   CALCULATOR TABLE
+========================= */
+
+#subjectTable,
+#resultTable {
+    width: 90%;
+
+    margin: 35px auto;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    background: #FFFFFF;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    border: 1px solid #D6E8F0;
+
+    box-shadow:
+        0 9px 24px rgba(12, 55, 86, 0.11),
+        0 0 16px rgba(53, 139, 186, 0.05);
+}
+
+#subjectTable th,
+#resultTable th {
+    background: #26637F;
+
+    color: #FFFFFF;
+
+    padding: 16px;
+
+    font-size: 17px;
+}
+
+#subjectTable td,
+#resultTable td {
+    padding: 13px;
+
+    border-bottom: 1px solid #DCEAF1;
+}
+
+#subjectTable tr:nth-child(even),
+#resultTable tr:nth-child(even) {
+    background: #F6FAFC;
+}
+
+#subjectTable tr:hover {
+    background: #EAF4F8;
+
+    transition: 0.2s;
+}
+
+#subjectTable input {
+    width: 90%;
+
+    padding: 9px;
+
+    border-radius: 9px;
+
+    border: 1px solid #A9C8D8;
+
+    background: #FFFFFF;
+
+    text-align: center;
+
+    color: #0C3756;
+
+    transition: 0.2s ease;
+}
+
+#subjectTable input:focus {
+    outline: none;
+
+    border-color: #358BBA;
+
+    box-shadow: 0 0 0 3px rgba(53, 139, 186, 0.12);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+#calculateBtn,
+#viewResultBtn,
+#downloadBtn {
+    background: #04354A;
+
+    color: #FFFFFF;
+
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 12px;
+
+    transition: 0.25s ease;
+
+    box-shadow:
+        0 6px 15px rgba(4, 53, 74, 0.20),
+        0 0 12px rgba(4, 53, 74, 0.08);
+}
+
+#calculateBtn {
+    padding: 13px 36px;
+
+    font-size: 19px;
+}
+
+#viewResultBtn {
+    display: block;
+
+    margin: 22px auto 0;
+
+    padding: 13px 32px;
+
+    font-size: 19px;
+}
+
+#downloadBtn {
+    margin-top: 18px;
+
+    padding: 12px 32px;
+
+    font-size: 17px;
+}
+
+#calculateBtn:hover,
+#viewResultBtn:hover,
+#downloadBtn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 20px rgba(4, 53, 74, 0.25),
+        0 0 16px rgba(4, 53, 74, 0.10);
+}
+
+/* =========================
+   SGPA RESULT
+========================= */
+
+.result-card {
+    width: 410px;
+
+    margin: 45px auto;
+
+    padding: 32px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    border-radius: 22px;
+
+    border: 1px solid rgba(255, 255, 255, 0.95);
+
+    color: #0C3756;
+
+    box-shadow:
+        0 10px 28px rgba(12, 55, 86, 0.13),
+        0 0 20px rgba(53, 139, 186, 0.08);
+
+    animation: fadeIn 0.6s ease;
+}
+
+.result-card h2 {
+    font-size: 27px;
+
+    color: #082F49;
+}
+
+#sgpa {
+    font-size: 60px;
+
+    font-weight: bold;
+
+    color: #26637F;
+
+    margin: 8px 0;
+
+    text-shadow: none;
+}
+
+.result-details {
+    margin-top: 17px;
+
+    font-size: 19px;
+}
+
+.result-details p {
+    margin: 9px;
+}
+
+#messageBox {
+    margin-top: 18px;
+
+    color: #B00020;
+
+    font-size: 17px;
+}
+
+/* =========================
+   POPUP
+========================= */
+
+.popup {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 30, 45, 0.58);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+
+    animation: fadeIn 0.4s ease;
+}
+
+.popup-card {
+    position: relative;
+
+    width: 85%;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: #FFFFFF;
+
+    padding: 38px;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(255, 255, 255, 0.95);
+
+    text-align: center;
+
+    color: #0C3756;
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.23),
+        0 0 25px rgba(53, 139, 186, 0.10);
+
+    animation: zoomIn 0.4s ease;
+}
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+#closePopup {
+    position: absolute;
+
+    top: 32px;
+    left: 18px;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 60%;
+
+    border: none;
+
+    background: #26637F;
+
+    color: #FFFFFF;
+
+    font-size: 27px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    box-shadow:
+        0 5px 12px rgba(12, 55, 86, 0.18),
+        0 0 10px rgba(53, 139, 186, 0.08);
+
+    transition: 0.25s ease;
+}
+
+#closePopup:hover {
+    transform: scale(1.00);
+
+    background: #04354A;
+}
+
+/* =========================
+   POPUP RESULT
+========================= */
+
+.result-summary {
+    font-size: 18px;
+
+    margin: 5px 0;
+}
+
+.result-summary p {
+    margin: 5px 0;
+
+    line-height: 1;
+}
+
+.popup-sgpa {
+    margin: 10px auto;
+}
+
+.popup-sgpa h2 {
+    font-size: 28px;
+
+    margin: 5px 0;
+}
+
+#popupSGPA {
+    font-size: 48px;
+
+    font-weight: bold;
+
+    background: #26637F;
+
+    color: #FFFFFF;
+
+    display: inline-block;
+
+    padding: 12px 45px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 18px rgba(12, 55, 86, 0.18),
+        0 0 15px rgba(53, 139, 186, 0.10);
+}
+
+#resultTable th,
+#resultTable td {
+    padding: 13px;
+    border-bottom: 1px solid #DCEAF1;
+    border-right: 1px solid #DCEAF1;
+}
+
+#resultTable th:last-child,
+#resultTable td:last-child {
+    border-right: none;
+}
+/* =========================
+   UTILITY
+========================= */
+
+.hidden {
+    display: none !important;
+}
+
+.fade {
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.96);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* Disable mouse-wheel changes on number inputs */
+input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.snow-container {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.snowflake {
+    position: absolute;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    user-select: none;
+    opacity: 0.95;
+}
+.hero-section {
+    position: relative;
+}
+
+.hero-peachu {
+    position: absolute;
+
+    top: -5px;
+    left: -91px;
+
+    width: 100px;
+    height: auto;
+
+    z-index: 10;
+
+    pointer-events: none;
+
+    filter: drop-shadow(0 6px 8px rgba(12, 55, 86, 0.12));
+}
+/* =========================
+   SUBJECT TABLE PEACHU
+========================= */
+
+.subject-table-wrapper {
+    position: relative;
+    width: 90%;
+    margin: 35px auto;
+}
+
+#subjectTable,
+#resultTable {
+    width: 90%;
+    margin: 35px auto;
+    position: relative;
+}
+
+.subject-peachu {
+    position: absolute;
+
+    top: 0;
+    left: calc(5% - 71px);
+
+    width: 80px;
+    height: auto;
+
+    z-index: 10;
+    pointer-events: none;
+
+    filter: drop-shadow(0 6px 8px rgba(12, 55, 86, 0.12));
+}
+@media (max-width: 719px) {
+    .subject-peachu {
+        left: -71px;
+    }
+}

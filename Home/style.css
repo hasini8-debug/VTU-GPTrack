@@ -1,0 +1,832 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =====================================================
+   MAIN WINTER BACKGROUND
+   ===================================================== */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+    color: #082F49;
+
+    position: relative;
+    overflow-x: hidden;
+
+    /* Blue sky gradient */
+    background:
+        radial-gradient(
+            ellipse at left center,
+            rgba(180, 255, 250, 0.35) 0%,
+            rgba(180, 255, 250, 0) 28%
+        ),
+        radial-gradient(
+            ellipse at right center,
+            rgba(180, 255, 250, 0.35) 0%,
+            rgba(180, 255, 250, 0) 28%
+        ),
+        linear-gradient(
+            to bottom,
+            #70B5DA 0%,
+            #8FC5E2 25%,
+            #B9D9EB 55%,
+            #DCEBF4 78%,
+            #EAF4F9 100%
+        );
+
+    background-attachment: fixed;
+}
+
+
+/* =====================================================
+   BACK SNOW LAYER
+   ===================================================== */
+
+body::before {
+    content: "";
+
+    position: fixed;
+
+    left: -8%;
+    bottom: -105px;
+
+    width: 116%;
+    height: 285px;
+
+    z-index: -2;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #F8FCFF 0%,
+            #EDF7FC 55%,
+            #DCECF8 100%
+        );
+
+    /*
+       Creates the large smooth wave
+    */
+    border-radius:
+        50% 50% 0 0 /
+        34% 34% 0 0;
+
+    box-shadow:
+        0 -10px 25px rgba(255, 255, 255, 0.30);
+}
+
+
+/* =====================================================
+   FRONT SNOW LAYER
+   ===================================================== */
+
+body::after {
+    content: "";
+
+    position: fixed;
+
+    left: -12%;
+    bottom: -155px;
+
+    width: 124%;
+    height: 285px;
+
+    z-index: -1;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #FFFFFF 0%,
+            #F8FBFE 45%,
+            #EAF4FC 75%,
+            #D7EAF8 100%
+        );
+
+    border-radius:
+        50% 50% 0 0 /
+        38% 38% 0 0;
+
+    box-shadow:
+        0 -14px 30px rgba(255, 255, 255, 0.45);
+}
+
+/* =====================================================
+   NAVBAR
+   ===================================================== */
+.top-header {
+    position: relative;
+    width: 94%;
+    min-height: 82px;
+    margin: 18px auto 0;
+}
+
+.vtu-logo {
+    width: 190px;
+    height: 110px;
+    object-fit: contain;
+    margin-left: 40px;
+    margin-top: 8px;
+}
+
+.header-right {
+    position: absolute;
+
+    right: 220px;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    transform: translateY(45px);
+}
+/* =====================================================
+   BRAND NAME
+   ===================================================== */
+
+.brand-name {
+    font-family: "Times New Roman", serif;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    color: #082F49;
+
+    margin-right: 5px;
+}
+
+
+/* =====================================================
+   NAVIGATION BAR
+   ===================================================== */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 7px 9px;
+
+    background: rgba(255, 255, 255, 0.42);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.65);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 22px rgba(8, 47, 73, 0.10),
+        inset 0 1px 2px rgba(255, 255, 255, 0.75);
+}
+
+
+/* Navigation buttons */
+
+.nav-links a {
+    text-decoration: none;
+
+    color: #164A68;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    padding: 9px 13px;
+
+    border-radius: 10px;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Hover */
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.72);
+
+    color: #082F49;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 4px 10px rgba(8, 47, 73, 0.10);
+}
+
+
+/* Active Home */
+
+.nav-links a.active {
+    background: #04354A;
+
+    color: white;
+
+    box-shadow:
+        0 5px 12px rgba(4, 53, 74, 0.22);
+}
+
+/* =====================================================
+   WELCOME SECTION
+   ===================================================== */
+
+.welcome-section {
+    text-align: center;
+
+    max-width: 720px;
+
+    margin: 58px auto 38px;
+
+    padding: 0 20px;
+}
+
+.welcome-section h1 {
+    font-family: "Times New Roman", serif;
+
+    font-size: 46px;
+    font-weight: bold;
+
+    color: #082F49;
+
+    margin-bottom: 12px;
+
+    letter-spacing: 0.3px;
+}
+
+.welcome-section p {
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    color: #315B73;
+}
+
+
+/* =====================================================
+   CALCULATOR SECTION
+   ===================================================== */
+
+.calculator-section {
+    width: 82%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    gap: 30px;
+}
+
+
+/* =====================================================
+   CALCULATOR CARDS
+   ===================================================== */
+
+.calculator-card {
+    flex: 1;
+
+    min-height: 300px;
+
+    padding: 35px 30px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.48);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.70);
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 14px 32px rgba(8, 47, 73, 0.13),
+        inset 0 1px 2px rgba(255, 255, 255, 0.8);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.calculator-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 20px 40px rgba(8, 47, 73, 0.17),
+        inset 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+
+/* Card icon */
+
+.card-icon {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Card heading */
+
+.calculator-card h2 {
+    font-family: "Times New Roman", serif;
+
+    font-size: 29px;
+
+    color: #082F49;
+
+    margin-bottom: 13px;
+}
+
+
+/* Description */
+
+.calculator-card p {
+    max-width: 370px;
+
+    margin: 0 auto 26px;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #315B73;
+}
+
+
+/* =====================================================
+   CARD BUTTON
+   ===================================================== */
+
+.card-button {
+    display: inline-block;
+
+    padding: 11px 25px;
+
+    background: #04354A;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 11px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 6px 14px rgba(4, 53, 74, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.card-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 18px rgba(4, 53, 74, 0.26);
+}
+
+/* =====================================================
+   ABOUT SECTION
+   ===================================================== */
+
+.about-section {
+    width: 80%;
+    max-width: 850px;
+
+    margin: 80px auto 0;
+
+    text-align: center;
+}
+
+.about-section h2 {
+    font-family: "Times New Roman", serif;
+
+    font-size: 32px;
+
+    color: #082F49;
+
+    margin-bottom: 16px;
+}
+
+.about-section p {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #315B73;
+}
+/* =====================================================
+   CONTACT SECTION
+   ===================================================== */
+.contact-section h2 {
+    font-family: "Times New Roman", serif;
+
+    font-size: 32px;
+
+    color: #082F49;
+
+    margin-bottom: 16px;
+}
+.contact-section {
+    width: 100%;
+
+    margin: 75px auto 100px;
+
+    text-align: center;
+}
+
+.contact-description {
+    max-width: 600px;
+
+    margin: 0 auto 28px;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #315B73;
+}
+
+
+/* =====================================================
+   CONTACT CARD
+   ===================================================== */
+
+.contact-card {
+    width: 520px;
+
+    max-width: calc(100% - 40px);
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+    text-align: left;
+
+    background: rgba(255, 255, 255, 0.48);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.72);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 14px 32px rgba(8, 47, 73, 0.12),
+        inset 0 1px 2px rgba(255, 255, 255, 0.80);
+}
+
+
+/* =====================================================
+   NAME + EMAIL
+   ===================================================== */
+
+.contact-row {
+    display: flex;
+
+    gap: 18px;
+
+    margin-bottom: 18px;
+}
+
+.contact-row .input-group {
+    flex: 1;
+}
+
+
+/* =====================================================
+   INPUT GROUP
+   ===================================================== */
+
+.input-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.input-group label {
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #164A68;
+}
+
+
+/* =====================================================
+   INPUTS
+   ===================================================== */
+
+.input-group input,
+.input-group textarea {
+
+    width: 100%;
+
+    padding: 11px 12px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    color: #082F49;
+
+    background: rgba(255, 255, 255, 0.62);
+
+    border: 1px solid rgba(8, 47, 73, 0.12);
+
+    border-radius: 10px;
+
+    outline: none;
+
+    transition:
+        border 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.input-group input:focus,
+.input-group textarea:focus {
+
+    background: rgba(255, 255, 255, 0.82);
+
+    border-color: rgba(4, 53, 74, 0.40);
+
+    box-shadow:
+        0 0 0 3px rgba(4, 53, 74, 0.08);
+}
+
+
+/* =====================================================
+   FEEDBACK
+   ===================================================== */
+
+.feedback-group {
+    margin-bottom: 22px;
+}
+
+.input-group textarea {
+
+    height: 125px;
+
+    resize: none;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   submit BUTTON
+   ===================================================== */
+
+.done-button {
+
+    display: block;
+
+    margin: 0 auto;
+
+    padding: 11px 30px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #04354A;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 14px rgba(4, 53, 74, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.done-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 18px rgba(4, 53, 74, 0.26);
+}
+/* =====================================================
+   INFO CARDS
+   ===================================================== */
+
+.info-cards {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 22px;
+}
+
+.info-card {
+    flex: 1;
+
+    padding: 25px 22px;
+
+    background: rgba(255, 255, 255, 0.40);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.65);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 9px 23px rgba(8, 47, 73, 0.09);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 13px 28px rgba(8, 47, 73, 0.13);
+}
+
+.info-card h3 {
+    font-family: "Times New Roman", serif;
+
+    font-size: 22px;
+
+    color: #082F49;
+
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 14px;
+
+    line-height: 1.55;
+
+    color: #315B73;
+
+    margin-bottom: 15px;
+}
+
+.info-card a {
+    color: #04354A;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.info-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+.footer {
+    width: 100%;
+
+    padding: 22px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.38);
+
+    border-top: 1px solid rgba(255, 255, 255, 0.55);
+
+    color: #315B73;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+/* =====================================================
+   HOME PAGE — SCATTERED SNOWFLAKES
+   ===================================================== */
+
+.home-snowflakes {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    margin-top: 10px;
+    pointer-events: none;
+}
+
+.home-snowflakes span {
+    position: absolute;
+    color: #BFDCEB;
+    opacity: 0.65;
+}
+
+/* Scattered positions + different sizes */
+
+.home-snowflakes span:nth-child(1) {
+    left: 7%;
+    bottom: 18px;
+    font-size: 15px;
+}
+
+.home-snowflakes span:nth-child(2) {
+    left: 16%;
+    bottom: 55px;
+    font-size: 23px;
+}
+
+.home-snowflakes span:nth-child(3) {
+    left: 27%;
+    bottom: 25px;
+    font-size: 13px;
+}
+
+.home-snowflakes span:nth-child(4) {
+    left: 38%;
+    bottom: 72px;
+    font-size: 19px;
+}
+
+.home-snowflakes span:nth-child(5) {
+    left: 48%;
+    bottom: 35px;
+    font-size: 26px;
+}
+
+.home-snowflakes span:nth-child(6) {
+    left: 58%;
+    bottom: 82px;
+    font-size: 14px;
+}
+
+.home-snowflakes span:nth-child(7) {
+    left: 67%;
+    bottom: 20px;
+    font-size: 21px;
+}
+
+.home-snowflakes span:nth-child(8) {
+    left: 76%;
+    bottom: 60px;
+    font-size: 16px;
+}
+
+.home-snowflakes span:nth-child(9) {
+    left: 84%;
+    bottom: 30px;
+    font-size: 24px;
+}
+
+.home-snowflakes span:nth-child(10) {
+    left: 91%;
+    bottom: 75px;
+    font-size: 13px;
+}
+
+.home-snowflakes span:nth-child(11) {
+    left: 32%;
+    bottom: 12px;
+    font-size: 18px;
+}
+
+.home-snowflakes span:nth-child(12) {
+    left: 72%;
+    bottom: 95px;
+    font-size: 12px;
+}

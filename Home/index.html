@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VTU GPTrack</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ================= NAVBAR ================= -->
+    <header class="top-header">
+
+    <!-- VTU Logo - outside navigation -->
+    <img src="vtu-logo.png" alt="VTU Logo" class="vtu-logo">
+
+    <!-- Brand + Navigation -->
+    <div class="header-right">
+
+
+        <nav class="nav-links">
+
+            <a href="index.html" class="active">Home</a>
+
+            <a href="../VTU-SGPA-Calculator/index.html">SGPA Calculator</a>
+
+            <a href="../VTU CGPA calculator/index.html">CGPA Calculator</a>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact Us</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+
+            <h1>VTU GPTrack</h1>
+
+            <p>
+                A simple and convenient way to calculate and track
+                your VTU academic performance.
+            </p>
+        </section>
+
+
+        <!-- Calculator Cards -->
+        <section class="calculator-section">
+
+            <div class="calculator-card">
+
+                <div class="card-icon">🎓</div>
+
+                <h2>SGPA Calculator</h2>
+
+                <p>
+                    Calculate your Semester Grade Point Average
+                    using your VTU Semester-end marks, internal marks and credits.
+                </p>
+
+               <a href="../VTU-SGPA-Calculator/index.html" class="card-button">
+                    Calculate SGPA
+                </a>
+            </div>
+
+            <div class="calculator-card">
+
+                <div class="card-icon">📊</div>
+
+                <h2>CGPA Calculator</h2>
+
+                <p>
+                    Calculate your overall Cumulative Grade Point
+                    Average using your semester-wise SGPAs.
+                </p>
+
+                <a href="../VTU CGPA calculator/index.html" class="card-button">
+                    Calculate CGPA
+                </a>
+
+            </div>
+        </section>
+
+        <!-- ================= OTHER SECTIONS ================= -->
+        <section class="other-section">
+
+            <!-- ================= ABOUT ================= -->
+
+<section id="about" class="about-section">
+
+    <h2><u> About </u></h2>
+
+    <p>
+        A simple, focused platform built to make VTU academic
+        calculations easier. Calculate your SGPA and CGPA,
+        understand your results, and keep track of your academic
+        performance — all in one place.
+        <br> Currently designed for the VTU P24 Scheme. 
+        GPA calculations may vary across different VTU schemes and batches,
+         so results should be interpreted according to the applicable scheme.
+    </p>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact-section">
+
+    <h2><u> Contact Us </u></h2>
+
+    <p class="contact-description">
+        Questions, suggestions, or feedback?
+        We'd love to hear from you. 
+        <br>Reach out and help us make GPTrack better.
+    </p>
+
+    <div class="contact-card">
+
+        <form id="contactForm">
+
+            <!-- Name + Email -->
+
+            <div class="contact-row">
+
+                <div class="input-group">
+
+                    <label for="name">Name :</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="email">Email :</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Your email"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Feedback -->
+
+            <div class="input-group feedback-group">
+
+                <label for="feedback">Feedback :</label>
+
+                <textarea
+                    id="feedback"
+                    placeholder="Write your feedback..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button type="submit" class="done-button">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+        </section>
+        </section>
+    </main>
+    <div class="home-snowflakes">
+    <span>❄</span>
+    <span>❄</span>
+    <span>❄</span>
+    <span>❄</span>
+    <span>❄</span>
+    <span>❄</span>
+    <span>❄</span>
+    <span>❄</span>
+</div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+    <p>Made for VTU students • 2026</p>
+    
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
