@@ -4,7 +4,7 @@ A simple web-based SGPA and CGPA calculator designed for VTU students.
 
 ## 🌐 Live Demo
 
-[Visit VTU GPTrack](https://hasini8-debug.github.io/VTU-GPTrack/)
+[Visit VTU GPTrack](https://inisah-web.github.io/VTU-GPTrack/)
 
 ## ✨ Features
 
