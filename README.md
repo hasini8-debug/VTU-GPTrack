@@ -19,8 +19,7 @@ A simple web-based SGPA and CGPA calculator designed for VTU students.
 - HTML
 - CSS
 - JavaScript
-
-## 📂 Project Structure
+  
 ## 📂 Project Structure
 
 ```text
